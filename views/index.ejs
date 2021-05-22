@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style1.css">
+    <title>Feedback Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="headingOne">
+                    <h1>Feedback Form</h1>
+                </div>
+                <div class="viewAll">
+                    <a href="/feedback">View all Feedbacks</a>
+                </div>
+            </div>
+
+            <div class="body">
+                <div class="form">
+                    <form action="/feedback" method="POST">
+                        <div class="ipField">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+
+                        <div class="ipField">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+
+                        <div class="ipField">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div class="ipField" id="textarea">
+                            <label id="feedback" for="feedback">Feedback</label>
+                            <textarea rows="10" cols="37" name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="button-container">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
